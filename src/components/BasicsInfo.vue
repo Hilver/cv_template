@@ -25,7 +25,7 @@
 
 <script>
 import ProfileDataRow from './utils/ProfileDataRow.vue'
-import profileData from '../data/profileData.js'
+import profileData from '../data/profile-data.js'
 
 export default {
   	name: 'BasicsInfo',
