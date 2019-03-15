@@ -3,7 +3,7 @@
 		<v-flex md6 xs12 ref="profileCard">
 			<v-card pa-1>
 				<v-container>
-					<ProfileDataRow
+					<DataRow
 						v-for="(profile, index) in profileData"
 						:key="Object.keys(profile)[index]"
 						:avatar="profile.avatar"
@@ -30,14 +30,14 @@
 </template>
 
 <script>
-import ProfileDataRow from './ProfileDataRow.vue'
+import DataRow from './utils/DataRow.vue'
 import {profileData, aboutMe} from '../data/profile-data.js'
 
 
 export default {
 	name: 'BasicsInfo',
 	components: {
-		ProfileDataRow
+		DataRow
 	},
 	data() {
 		return {
