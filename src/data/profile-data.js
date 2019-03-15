@@ -1,4 +1,4 @@
-const profileData = {
+export const profileData = {
 	nameSurname: {
 		avatar: process.env.VUE_APP_AVATAR_LINK,
 		text: process.env.VUE_APP_NAME,
@@ -21,4 +21,8 @@ const profileData = {
 	}
 }
 
-export default profileData
+export const aboutMe = {
+	icon: 'drafts',
+	msg: process.env.VUE_APP_ABOUT_ME
+}
+

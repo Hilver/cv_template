@@ -1,6 +1,6 @@
-<template> 
+<template>
 	<v-layout align-center justify-center row>
-		<v-flex md6 ref="profileCard" >
+		<v-flex md6 ref="profileCard">
 			<v-card pa-1>
 				<v-container>
 					<ProfileDataRow
@@ -16,27 +16,35 @@
 			</v-card>
 		</v-flex>
 		<v-flex md6 >
-			<v-card  pa-1 :style="profileCardHeight">
-				yolo
+			<v-card pa-1 :style="profileCardHeight">
+				<v-card-title>
+					<v-icon x-large left>{{ aboutMe.icon }}</v-icon>
+					<span class="headline font-weight-bold">About me:</span>
+				</v-card-title>
+				<v-card-text class="headline">
+					{{ aboutMe.msg }}
+				</v-card-text>
 			</v-card>
 		</v-flex>
 	</v-layout>
 </template>
 
 <script>
-import ProfileDataRow from './utils/ProfileDataRow.vue'
-import profileData from '../data/profile-data.js'
+import ProfileDataRow from './ProfileDataRow.vue'
+import {profileData, aboutMe} from '../data/profile-data.js'
+
 
 export default {
-  	name: 'BasicsInfo',
-  	components: {
-	  	ProfileDataRow
+	name: 'BasicsInfo',
+	components: {
+		ProfileDataRow
 	},
-  	data() {
-	  	return {
+	data() {
+		return {
 			profileData,
+			aboutMe,
 			profileCardHeight: ''
-	  	}
+		}
 	},
 	methods: {
 		getHeight() {
@@ -45,7 +53,7 @@ export default {
 			this.profileCardHeight = 'height:' + heightString
 		}
 	},
-	mounted() {		
+	mounted() {
 		this.getHeight()
 	}
 }
