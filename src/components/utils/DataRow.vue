@@ -8,7 +8,7 @@
 			</v-avatar>
 		</v-flex>
 		<v-flex align-self-center>
-			<span :class="[icon ? 'title' : 'display-2']">{{ text }}</span>
+			<span :class="[icon ? textClass : 'display-2']">{{ text }}</span>
 		</v-flex>
     </v-layout>
 	<v-divider v-if="divider"></v-divider>
@@ -17,7 +17,7 @@
 <script>
 
 export default {
-    name: 'ProfileDataRow',
+    name: 'DataRow',
     props: {
 		avatar: {
 			type: String,
@@ -38,7 +38,12 @@ export default {
         text: {
             type: String,
             default: ''
-        }
+		},
+		textClass: {
+			type: Array,
+			default: () => ['title'],
+			validator: value => value.toString()
+		}
 	}
 }
 </script>

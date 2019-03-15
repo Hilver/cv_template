@@ -4,7 +4,7 @@
 			<v-layout row wrap align-center justify-center>
 				<v-flex xs12 md8>
 					<BasicsInfo />
-					<ExperienceSection />
+					<MainInfo />
 				</v-flex>
 			</v-layout>
 		</v-container>
@@ -13,13 +13,13 @@
 
 <script>
 import BasicsInfo from './components/BasicsInfo'
-import ExperienceSection from './components/ExperienceSection'
+import MainInfo from './components/MainInfo'
 
 export default {
   name: 'App',
   components: {
 		BasicsInfo,
-		ExperienceSection
+		MainInfo
   },
   data () {
     return {
