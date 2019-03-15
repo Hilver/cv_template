@@ -16,27 +16,30 @@
 			</v-card>
 		</v-flex>
 		<v-flex md6 >
-			<v-card  pa-1 :style="profileCardHeight">
-				yolo
+			<v-card pa-1 :style="profileCardHeight">
+				<v-card-title>
+					<v-icon large left>drafts</v-icon>
+					<span class="title">About me:</span>
+				</v-card-title>
 			</v-card>
 		</v-flex>
 	</v-layout>
 </template>
 
 <script>
-import ProfileDataRow from './utils/ProfileDataRow.vue'
+import ProfileDataRow from './ProfileDataRow.vue'
 import profileData from '../data/profile-data.js'
 
 export default {
-  	name: 'BasicsInfo',
-  	components: {
-	  	ProfileDataRow
+	name: 'BasicsInfo',
+	components: {
+		ProfileDataRow
 	},
-  	data() {
-	  	return {
+	data() {
+		return {
 			profileData,
 			profileCardHeight: ''
-	  	}
+		}
 	},
 	methods: {
 		getHeight() {
