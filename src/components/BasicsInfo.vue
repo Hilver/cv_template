@@ -1,6 +1,6 @@
 <template>
-	<v-layout align-center justify-center row>
-		<v-flex md6 ref="profileCard">
+	<v-layout align-center justify-center row wrap>
+		<v-flex md6 xs12 ref="profileCard">
 			<v-card pa-1>
 				<v-container>
 					<ProfileDataRow
@@ -15,7 +15,7 @@
 				</v-container>
 			</v-card>
 		</v-flex>
-		<v-flex md6 >
+		<v-flex md6 xs12>
 			<v-card pa-1 :style="profileCardHeight">
 				<v-card-title>
 					<v-icon x-large left>{{ aboutMe.icon }}</v-icon>
