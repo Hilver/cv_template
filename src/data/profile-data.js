@@ -5,24 +5,24 @@ export const profileData = {
 		flex: '3'
 	},
 	phoneNumber: {
-		icon: 'phone',
+		icon: 'fa-phone',
 		text: process.env.VUE_APP_PHONE,
 		underline: true
 	},
 	emailAdress: {
-		icon: 'mail',
+		icon: 'fa-envelope',
 		text: process.env.VUE_APP_EMAIL,
 		underline: true
 	},
 	residence: {
-		icon: 'place',
+		icon: 'fa-map-marker-alt',
 		text: process.env.VUE_APP_ADDRESS,
 		underline: true
 	}
 }
 
 export const aboutMe = {
-	icon: 'drafts',
+	icon: 'fa-user-edit',
 	msg: process.env.VUE_APP_ABOUT_ME
 }
 

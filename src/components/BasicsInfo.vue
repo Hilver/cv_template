@@ -18,7 +18,7 @@
 		<v-flex md6 xs12>
 			<v-card pa-1 :style="profileCardHeight">
 				<v-card-title>
-					<v-icon x-large left>{{ aboutMe.icon }}</v-icon>
+					<v-icon large left>{{ aboutMe.icon }}</v-icon>
 					<span class="headline font-weight-bold">About me:</span>
 				</v-card-title>
 				<v-card-text class="headline">

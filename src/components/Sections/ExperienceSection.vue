@@ -2,7 +2,7 @@
 	<v-timeline>
 		<v-timeline-item v-for="(experience, index) in experienceData" :key="Object.keys(experienceData)[index]">
 			<template v-slot:icon>
-				<v-icon dark>{{ experience.icon }}</v-icon>
+				<v-icon small dark>{{ experience.icon }}</v-icon>
 			</template>
 			<template v-slot:opposite>
 				<span class="title">{{ experience.date }}</span>

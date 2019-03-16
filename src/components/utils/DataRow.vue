@@ -41,8 +41,7 @@ export default {
 		},
 		textClass: {
 			type: Array,
-			default: () => ['title'],
-			validator: value => value.toString()
+			default: () => ['title']
 		}
 	}
 }

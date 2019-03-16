@@ -1,7 +1,19 @@
-const achievementsInfo = [
-	'1st place in ZUCK Challenge',
-	'My parents',
-	'Practice YOLO life philosophy'
+const achievementsData = [
+	{
+		text: 'first example',
+		textClass: ['body-2'],
+		icon: 'fa-medal'
+	},
+	{
+		text: 'second thing',
+		textClass: ['body-2'],
+		icon: 'fa-medal'
+	},
+	{
+		text: 'third success',
+		textClass: ['body-2'],
+		icon: 'fa-medal'
+	}
 ]
 
-export default achievementsInfo
+export default achievementsData

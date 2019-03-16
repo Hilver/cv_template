@@ -3,9 +3,9 @@
 	<DataRow
 		v-for="(achievement, index) in achievementData"
 		:key="index"
-		:text="achievement"
-		:textClass="['body-2']"
-		:icon="'stars'"
+		:text="achievement.text"
+		:textClass="achievement.textClass"
+		:icon="achievement.icon"
 	/>
 </div>
 </template>

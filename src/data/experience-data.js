@@ -11,7 +11,7 @@ export const experienceData = {
 			}
 		],
 		duties: ['drink coffee', 'make money'],
-		icon: 'accessible'
+		icon: 'fa-coffee'
 	},
 	data2: {
 		title: 'Simple Worker',
@@ -29,6 +29,6 @@ export const experienceData = {
 			}
 		],
 		duties: ['make coffee', 'drink money'],
-		icon: 'grade'
+		icon: 'fa-walking'
 	}
 }
