@@ -1,7 +1,7 @@
 <template>
 	<v-layout align-center justify-center row wrap>
-		<v-flex md6 xs12 ref="profileCard">
-			<v-card pa-1>
+		<v-flex md6 xs12>
+			<v-card pa-1 ref="profileCard">
 				<v-container>
 					<DataRow
 						v-for="(profile, index) in profileData"
@@ -32,7 +32,7 @@
 <script>
 import DataRow from './utils/DataRow.vue'
 import {profileData, aboutMe} from '../data/profile-data.js'
-
+import {getClientHeight} from './utils//methods/get-client-height'
 
 export default {
 	name: 'BasicsInfo',
@@ -46,15 +46,8 @@ export default {
 			profileCardHeight: ''
 		}
 	},
-	methods: {
-		getHeight() {
-			// A little trick to align the height of about-me component
-			const heightString = this.$refs.profileCard.clientHeight + 'px'
-			this.profileCardHeight = 'height:' + heightString
-		}
-	},
 	mounted() {
-		this.getHeight()
+		this.profileCardHeight = getClientHeight(this.$refs.profileCard)
 	}
 }
 </script>
