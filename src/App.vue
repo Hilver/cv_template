@@ -5,6 +5,7 @@
 				<v-flex xs12 md8>
 					<BasicsInfo />
 					<MainInfo />
+					<FooterInfo />
 				</v-flex>
 			</v-layout>
 		</v-container>
@@ -14,12 +15,14 @@
 <script>
 import BasicsInfo from './components/BasicsInfo'
 import MainInfo from './components/MainInfo'
+import FooterInfo from './components/FooterInfo'
 
 export default {
   name: 'App',
   components: {
 		BasicsInfo,
-		MainInfo
+		MainInfo,
+		FooterInfo
   },
   data () {
     return {
