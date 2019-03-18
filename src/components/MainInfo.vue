@@ -1,17 +1,17 @@
 <template>
 	<v-layout row wrap>
 		<v-flex xs12>
-		<card-section title="Doświadczenie zawodowe" icon="fa-wrench">
+		<card-section title="Experience" icon="fa-wrench">
 			<Experience />
 		</card-section>
 		</v-flex>
 		<v-flex xs6 pr-1>
-		<card-section title="Osiągnięcia" icon="fa-thumbs-up" ref="achievementCard">
+		<card-section title="Achievements" icon="fa-thumbs-up" ref="achievementCard">
 			<Achievement />
 		</card-section>
 		</v-flex>
 		<v-flex xs6 pl-1>
-			<card-section title="Zainteresowania" icon="fa-heartbeat" :style="achievementCardHeight">
+			<card-section title="Interests" icon="fa-heartbeat" :style="achievementCardHeight">
 				<Passion />
 			</card-section>
 		</v-flex>

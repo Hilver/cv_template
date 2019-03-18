@@ -1,16 +1,16 @@
 const achievementsData = [
 	{
-		text: 'first example',
+		text: 'Left my basement',
 		textClass: ['body-2'],
 		icon: 'fa-medal'
 	},
 	{
-		text: 'second thing',
+		text: 'Went for shopping',
 		textClass: ['body-2'],
 		icon: 'fa-medal'
 	},
 	{
-		text: 'third success',
+		text: 'CV made',
 		textClass: ['body-2'],
 		icon: 'fa-medal'
 	}
