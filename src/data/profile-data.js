@@ -23,6 +23,8 @@ export const profileData = {
 
 export const aboutMe = {
 	icon: 'fa-user-edit',
-	msg: process.env.VUE_APP_ABOUT_ME
+	msg: 'Gdybym miał zabrać trzy rzeczy na bezludną wyspę wybrałbym piłkę do siatkówki, pompkę i jacht Delhpia 47 z pełnym wyposażeniem.<br>Tak. Informacje o tym jachcie wyszukałem przed chwilą w internecie. Jestem z tych ludzi, którzy są uzależnieni od zdobywania informacji. Lubię testować, sprawdzać, analizować i zadawać pytania.' +
+		' W pracy czuję się dobrze wśród pasjonatów, z którymi mogę dzielić swoje pasje.<br>Po pracy chętnie zagram w siatkówkę, szachy.',
+	textClass: 'font-weight-bold, subheading'
 }
 

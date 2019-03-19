@@ -11,6 +11,7 @@
 						:flex="profile.flex"
 						:icon="profile.icon"
 						:text="profile.text"
+						:textClass="profile.textClass"
 					/>
 				</v-container>
 			</v-card>
@@ -19,10 +20,10 @@
 			<v-card pa-1 :style="profileCardHeight">
 				<v-card-title>
 					<v-icon large left>{{ aboutMe.icon }}</v-icon>
-					<span class="headline font-weight-bold">About me:</span>
+					<span class="headline font-weight-bold">O mnie:</span>
 				</v-card-title>
-				<v-card-text class="headline">
-					{{ aboutMe.msg }}
+				<v-card-text :class="[aboutMe.textClass ? aboutMe.textClass : 'title font-weight-light']">
+					<span v-html="aboutMe.msg">{{ aboutMe.msg }}</span>
 				</v-card-text>
 			</v-card>
 		</v-flex>

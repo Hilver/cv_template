@@ -25,7 +25,7 @@
 				</v-card-text>
 				<v-card-actions v-if="experience.stack">
 					<span class="subheading font-weight-bold">Stack:</span>
-					<v-chip v-for="skill in experience.skills" :key="skill.stack">
+					<v-chip v-for="skill in experience.skills" :key="skill.stack" small>
 						<v-avatar left>
 						<img :src="skill.icon">
 						</v-avatar>

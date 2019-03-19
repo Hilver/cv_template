@@ -1,10 +1,8 @@
-<template>
-    <v-footer pt-2>
-        <span 
-            :class="[footerData.textClass ? footerData.textClass : 'body-1']"> 
-            {{ footerData.text }} 
-        </span>
-    </v-footer>
+<template>    
+    <span 
+        :class="[footerData.textClass ? footerData.textClass : 'body-1']">
+        {{ footerData.text }} 
+    </span>    
 </template>
 <script>
 import footerData from '../data/footer-data'

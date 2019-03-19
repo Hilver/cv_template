@@ -32,12 +32,15 @@ export default {
 }
 </script>
 
-<style scoped lang="sass">
+<style lang="sass">
 
 .schema
 	max-width: 1024px
 	display: flex
 	justify-content: center
 	align-items: center
+
+li
+	line-height: 20px!important
 
 </style>
