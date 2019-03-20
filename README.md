@@ -111,7 +111,7 @@ Enter stack data that you used at work. This will create a chip at the bottom of
 ```object
 {
 	stack: String,
-    icon: URL
+	icon: URL
 }
 ```
 
