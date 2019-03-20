@@ -1,8 +1,15 @@
 const passionData = [
 	{
 		icon: 'fa-grin-hearts',
-		text: 'eating, moving, riding, singing',
-		textClass: ['body-2']
+		text: 'Eating, moving, riding, singing'
+	},
+	{
+		icon: 'fa-meh-blank',
+		text: 'Drinking tea, going outside, sleeping to short'
+	},
+	{
+		icon: 'fa-tired',
+		text: 'Cleaning my desk'
 	}
 ]
 
