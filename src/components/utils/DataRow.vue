@@ -28,8 +28,8 @@ export default {
 			default: false
 		},
 		flex: {
-			type: String,
-			default: '1'
+			type: Number,
+			default: 1
 		},
         icon: {
             type: String,
