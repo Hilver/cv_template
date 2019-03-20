@@ -21,8 +21,8 @@
 					<v-icon large left>{{ aboutMe.icon }}</v-icon>
 					<span class="headline font-weight-bold">About me:</span>
 				</v-card-title>
-				<v-card-text class="headline">
-					{{ aboutMe.msg }}
+				<v-card-text :class="[aboutMe.textClass ? aboutMe.textClass : 'headline']">
+					<span v-html="aboutMe.msg">{{ aboutMe.msg }}</span>
 				</v-card-text>
 			</v-card>
 		</v-flex>

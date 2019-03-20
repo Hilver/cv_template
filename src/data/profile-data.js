@@ -23,6 +23,7 @@ export const profileData = {
 
 export const aboutMe = {
 	icon: 'fa-user-edit',
-	msg: 'Hi. I\'m John. John Doe. I\'m propably the borest person in the world. Falling leafs are more exciting than me. One of the most breathtaking story of my life was 3 years ago, when I went for shopping and left my basement. Thank you for reading this.'
+	msg: 'Hi. I\'m John. John Doe. I\'m propably the borest person in the world. Falling leafs are more exciting than me. One of the most breathtaking story of my life was 3 years ago, when I went for shopping and left my basement. Thank you for reading this.',
+	textClass: 'headline font-weight-light'
 }
 
