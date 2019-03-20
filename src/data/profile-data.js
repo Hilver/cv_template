@@ -2,7 +2,7 @@ export const profileData = {
 	nameSurname: {
 		avatar: process.env.VUE_APP_AVATAR_LINK,
 		text: process.env.VUE_APP_NAME,
-		flex: '3'
+		flex: 3
 	},
 	phoneNumber: {
 		icon: 'fa-phone',
