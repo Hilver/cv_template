@@ -77,15 +77,15 @@ export const experienceData = {
 		skills: [
 			{
 				stack: 'HTML5',
-				icon: 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png'
+				icon: 'http://peczkowskip.com/img/logo-2582748_640.png'
 			},
 			{
 				stack: 'CSS3',
-				icon: 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png'
+				icon: 'http://peczkowskip.com/img/logo-2582747_640.png'
 			},
 			{
 				stack: 'JavaScript',
-				icon: 'https://cdn.iconscout.com/icon/free/png-256/javascript-16-458317.png'
+				icon: 'https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png'
 			}
 		],
 		duties: [
